@@ -39,7 +39,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⊙ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ⊙', url='https://t.me/request_movie2'),
             InlineKeyboardButton('⊙ ᴜᴘᴅᴀᴛᴇ ⊙', url='https://t.me/noob_marcus')
@@ -48,7 +48,7 @@ async def start(client, message):
             InlineKeyboardButton('✧ ᴀʙᴏᴜᴛ ᴍᴇ ✧', callback_data='about')
             ],[
             InlineKeyboardButton('⌕ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs-ᴡᴇʙsᴇʀɪᴇs ⌕', switch_inline_query_current_chat='')
-        ]]
+        ]]     
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -66,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔥", url=invite_link.invite_link
+                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
                 )
             ]
         ]
@@ -75,7 +75,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!",
+            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -91,7 +91,7 @@ async def start(client, message):
             InlineKeyboardButton('✧ ᴀʙᴏᴜᴛ ᴍᴇ ✧', callback_data='about')
             ],[
             InlineKeyboardButton('⌕ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs-ᴡᴇʙsᴇʀɪᴇs ⌕', switch_inline_query_current_chat='')
-        ]]
+        ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -255,7 +255,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = '📑 Indexed channels/groups\n'
+    text = '📑 **Indexed channels/groups**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -263,7 +263,7 @@ async def channel_info(bot, message):
         else:
             text += '\n' + chat.title or chat.first_name
 
-    text += f'\n\nTotal: {len(CHANNELS)}'
+    text += f'\n\n**Total:** {len(CHANNELS)}'
 
     if len(text) < 4096:
         await message.reply(text)
@@ -307,7 +307,7 @@ async def delete(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        await msg.edit('𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳')
+        await msg.edit('**𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳**')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
@@ -316,7 +316,7 @@ async def delete(bot, message):
             'mime_type': media.mime_type
             })
         if result.deleted_count:
-            await msg.edit('𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳')
+            await msg.edit('**𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳**')
         else:
             # files indexed before https://github.com/EvamariaTG/EvaMaria/commit/f3d2a1bcb155faf44178e5d7a685a1b533e714bf#diff-86b613edf1748372103e94cacff3b578b36b698ef9c16817bb98fe9ef22fb669R39 
             # have original file name.
@@ -326,7 +326,7 @@ async def delete(bot, message):
                 'mime_type': media.mime_type
             })
             if result.deleted_count:
-                await msg.edit('𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳')
+                await msg.edit('**𝙵𝙸𝙻𝙴 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙳𝙴𝙻𝙴𝚃𝙴𝙳**')
             else:
                 await msg.edit('File not found in database')
 
@@ -334,7 +334,7 @@ async def delete(bot, message):
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        '𝚃𝙷𝙸𝚂 𝙿𝚁𝙾𝙲𝙴𝚂𝚂 𝚆𝙸𝙻𝙻 𝙳𝙴𝙻𝙴𝚃𝙴 𝙰𝙻𝙻 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚁 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴.\n𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙲𝙾𝙽𝚃𝙸𝙽𝚄𝙴 𝚃𝙷𝙸𝚂..??',
+        '**𝚃𝙷𝙸𝚂 𝙿𝚁𝙾𝙲𝙴𝚂𝚂 𝚆𝙸𝙻𝙻 𝙳𝙴𝙻𝙴𝚃𝙴 𝙰𝙻𝙻 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚁 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴.\n𝙳𝙾 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙲𝙾𝙽𝚃𝙸𝙽𝚄𝙴 𝚃𝙷𝙸𝚂..??**',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -476,7 +476,7 @@ async def settings(client, message):
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
-    sts = await message.reply("𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙽𝙴𝚆 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴")
+    sts = await message.reply("**𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙽𝙴𝚆 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴**")
     userid = message.from_user.id if message.from_user else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
