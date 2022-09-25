@@ -2,7 +2,7 @@
   <img src="assets/AJAX.png" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
-  <b>𝙰𝙹𝙰𝚇-𝙴𝚇𝚃𝚁𝙰-𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂</b>
+  <b>Ayesah</b>
 </h1>
 
 <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA">
