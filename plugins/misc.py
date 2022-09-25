@@ -10,9 +10,9 @@ import random
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 import logging
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name)
 logger.setLevel(logging.ERROR)
-
+#g
 @Client.on_message(filters.command('id'))
 async def showid(client, message):
     chat_type = message.chat.type
@@ -60,7 +60,7 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://youtu.be/kB9TkCs8cX0')
+            InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://t.me/marcusxbot')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
@@ -77,10 +77,10 @@ async def aboutme(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝚄𝚂𝙴𝚁...`"
+        "𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝚄𝚂𝙴𝚁..."
     )
     await status_message.edit(
-        "`𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽...`"
+        "𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽..."
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -276,5 +276,3 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     else:
         await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
     await quer_y.answer()
-
-
