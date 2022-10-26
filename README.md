@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/AJAX.png" alt="Ajax-Extra-FeaturesLogo">
+  <img src="https://graph.org/file/3d972304d3285335d2843.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
   <b>Ayesah</b>
