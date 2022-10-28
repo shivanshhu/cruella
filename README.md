@@ -2,7 +2,7 @@
   <img src="https://graph.org/file/3d972304d3285335d2843.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 <h1 align="center">
-  <b>Ayesah</b>
+  <b>𝕮𝖗𝖚𝖊𝖑𝖑𝖆(◍•ᴗ•◍)✧*</b>
 </h1>
 
 <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA">
@@ -60,7 +60,7 @@ You can deploy this bot anywhere.
 <summary>Deploy To Heroku</summary>
 <br>
 <p>
-<a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/Ajax-Extra-Features">
+<a href="https://heroku.com/deploy?template=https://github.com/shivanshhu/cruella">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
@@ -72,7 +72,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Aadhi000/Ajax-Extra-Features
+git clone https://github.com/shivanshhu/cruella
 # Install Packages
 pip3 install -r requirements.txt
 Edit info.py with variables as given below then run bot
