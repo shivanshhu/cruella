@@ -11,7 +11,7 @@ from plugins.helper_functions.cust_p_filters import f_onw_fliter
 ALIVE = "ചത്തിട്ടില്ല മുത്തേ ഇവിടെ തന്നെ ഉണ്ട്.. നിനക്ക് ഇപ്പൊ എന്നോട് ഒരു സ്നേഹവും ഇല്ല. കൊള്ളാം.. നീ പാഴെ പോലെയേ അല്ല മാറിപോയി..😔 ഇടക്ക് എങ്കിലും ചുമ്മാ ഒന്ന് /start ചെയ്തു നോക്ക്..🙂" 
 REPO = "not open"
 CHANNEL = "Cʜᴏᴏsᴇ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇs ᴍᴏᴠɪᴇs ᴄʜᴀɴɴᴇʟ Aɴᴅ ᴊᴏɪɴ ғᴀsᴛ ➦/n/n✦ ᴇɴɢʟɪsʜ (ʜᴏʟʟʏᴡᴏᴏᴅ) : https://t.me/+TFyDaeLsoDM0Y2Y1/n/n✦ ʜɪɴᴅɪ :  https://t.me/+1jquABsI3m1lYTVl/n/n✦ ᴛᴀᴍɪʟ :  https://t.me/+nzlsdKjoWRJiZjll/n/n✦ ᴛᴇʟᴜɢᴜ :  https://t.me/+hQzXQkChv0NjNWVl/n/n✦ ᴍᴀʟᴀʏᴀʟᴀᴍ :  https://t.me/+MetDlLy1mdNkZGM1/n/n✦ ᴘᴜɴᴊᴀʙɪ :  https://t.me/+v4B4-nNJyH4zZjVl/n/n✦ ᴋᴀɴɴᴀᴅᴀ : https://t.me/+6eKNZQWoj-4xOGQ1"
-AJAX = "<b>𝙱𝙾𝚃 ›› https://t.me/Devil0Bot_Bot</b>"
+AJAX = "<b>𝙱𝙾𝚃 ›› https://t.me/cruella_robot</b>"
 # -- Constants End -- #
 
 
@@ -44,6 +44,6 @@ async def channel(_, message):
     await message.reply_text(CHANNEL)
 
 
-@Client.on_message(filters.command("ajggax", COMMAND_HAND_LER) & f_onw_fliter)
+@Client.on_message(filters.command("champu", COMMAND_HAND_LER) & f_onw_fliter)
 async def ajax(_, message):
     await message.reply_text(AJAX)
