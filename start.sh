@@ -8,5 +8,5 @@ else
 fi
 cd /Ajax
 pip3 install -U -r requirements.txt
-echo "Starting ᗩᒍᗩ᙭....🔥"
+echo "𝕮𝖗𝖚𝖊𝖑𝖑𝖆(◍•ᴗ•◍)✧*....🔥"
 python3 bot.py
