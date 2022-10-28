@@ -14,7 +14,7 @@ from database.connections_mdb import active_connection
 import re
 import json
 import base64
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name)
 
 BATCH_FILES = {}
 
@@ -41,13 +41,13 @@ async def start(client, message):
         buttons = [[
              InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⊙ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ⊙', url='https://t.me/request_movie2'),
-            InlineKeyboardButton('⊙ ᴜᴘᴅᴀᴛᴇ ⊙', url='https://t.me/noob_marcus')
+            InlineKeyboardButton('⊙ ɢʀᴏᴜᴘ ⊙', url='https://t.me/+0U4jWzUglCdlZWFl'),
+            InlineKeyboardButton('⊙ ᴜᴘᴅᴀᴛᴇ ⊙', url='https://t.me/shivanshudeo')
             ],[      
             InlineKeyboardButton('✘ ʜᴇʟᴘ ✘', callback_data='help'),
             InlineKeyboardButton('✧ ᴀʙᴏᴜᴛ ᴍᴇ ✧', callback_data='about')
             ],[
-            InlineKeyboardButton('⌕ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇs-ᴡᴇʙsᴇʀɪᴇs ⌕', switch_inline_query_current_chat='')
+            InlineKeyboardButton('⌕ ✅ SUBSCᏒIBΞ  ✅ ⌕, 'https://m.youtube.com/channel/UCjIQaZpHMwddQ9R0aGzME0w')
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -75,7 +75,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("🔁 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧 🔁", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
+            text="**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -84,8 +84,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⊙ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ⊙', url='https://t.me/request_movie2'),
-            InlineKeyboardButton('⊙ ᴜᴘᴅᴀᴛᴇ ⊙', url='https://t.me/noob_marcus')
+            InlineKeyboardButton('⊙ ɢʀᴏᴜᴘ ⊙', url='https://t.me/+0U4jWzUglCdlZWFl'),
+            InlineKeyboardButton('⊙ ᴜᴘᴅᴀᴛᴇ ⊙', url='https://t.me/shivanshudeo')
             ],[      
             InlineKeyboardButton('✘ ʜᴇʟᴘ ✘', callback_data='help'),
             InlineKeyboardButton('✧ ᴀʙᴏᴜᴛ ᴍᴇ ✧', callback_data='about')
