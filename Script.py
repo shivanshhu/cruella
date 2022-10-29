@@ -17,7 +17,7 @@ class script(object):
 
 <b>🛑 Dᴀᴛᴀ ʙᴀsᴇ : ᴍᴏɴɢᴏ ᴅʙ</b>
 
-<b>👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/request_movie2>ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ</a></b>"""
+<b>👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/+0U4jWzUglCdlZWFl>ᴍᴏᴠɪᴇs ɢʀᴏᴜᴘ</a></b>"""
     DONATION_TXT = """"""
     PROMOTION_TXT = """@shivanshudeo""" 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
